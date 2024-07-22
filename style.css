@@ -1,0 +1,152 @@
+.navbar {
+    background-color: #58B3C2;
+    height: 80px;
+    padding: 0.5rem;
+}
+
+
+.navbar-brand {
+    font-weight: 500;
+    color: #2A2967;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+.navbar-togger {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-togger:focus .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+
+}
+
+.nav-link {
+    color: gray;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: black;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color:#2A2967 ;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+}
+
+.hero-section {
+    background : url(Desain\ Website.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top : 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1{
+    font-size: 1.5em;
+    font-family: Rubik Regular;
+    color: #000;
+    position: relative;
+}
+
+.hero-section h2{
+    font-size: 0.4em;
+    font-family: Rajdhani Regular;
+    color: #000;
+    position: relative;
+}
+
+.video-button {
+    background-color: #2A2967;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: 0.3s background-colour;
+}
+
+.video-button:hover{
+    background-color: blue;
+}
+
+.about-section-padding {
+    background : url(Desain\ Website.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.about-section-padding::before {
+    content: "";
+    position: absolute;
+    top : 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container h3{
+    font-size: 30px;
+    font-family: Rubik Regular;
+    color: #000;
+    position: relative;
+}
+
+.container h4{
+    font-size: 14px;
+    font-family: Rajdhani Regular;
+    color: #000;
+    position: relative;
+}
+.contact-section-padding {
+    background : url(Desain\ Website.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.container h5{
+    font-size: 30px;
+    font-family: Rubik Regular;
+    color: #000;
+    position: relative;
+}
+
+.container h6{
+    font-size: 20px;
+    font-family: Rajdhani Regular;
+    color: #000;
+    position: relative;
+}
+
